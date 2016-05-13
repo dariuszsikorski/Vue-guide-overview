@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vue Doc</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="container index">
+
+      <ul>
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/installation.html">Installation</a></p>
+          <p class="desc">Methods of downloading and installing Vue.</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/installation.html#Standalone">Standalone</a></p>
+              <p class="desc">Including Vue with SCRIPT tag</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/installation.html#CDN">CDN</a></p>
+                  <p class="desc">Including from CDN</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/installation.html#CSP-compliant-build">CSP-compliant build</a></p>
+                  <p class="desc">Including from CSP-compliant build</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/installation.html#NPM">NPM</a></p>
+              <p class="desc">Downloading Vue from NPM</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/installation.html#CLI">CLI</a></p>
+              <p class="desc">Installing Vue for CLI</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/installation.html#Dev-Build">Dev Build</a></p>
+              <p class="desc">Downloading latest Vue source code for custom build.</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/installation.html#Bower">Bower</a></p>
+              <p class="desc">Bower command to install Vue</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/installation.html#AMD-Module-Loaders">AMD Module Loaders</a></p>
+              <p class="desc">Using Bower to install as AMD module</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/index.html">Getting Started</a></p>
+          <p class="desc">Basic Vue features (by building sample Todos App)</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/index.html#Hello-World">Hello World</a></p>
+              <p class="desc">Minimal code to create Vue showing some message.</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/index.html#Two-way-Binding">Two-way Binding</a></p>
+              <p class="desc">Binding data by v-model directive (text input example).</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/index.html#Render-a-List">Render a List</a></p>
+              <p class="desc">Rendering array of data in view by v-for directive.</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/index.html#Handle-User-Input">Handle User Input</a></p>
+              <p class="desc">Reacting to user click by v-on:click and calling Vue method.</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/index.html#All-Together-Now">All Together Now</a></p>
+              <p class="desc">Sample Todos App made from basic features.</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/overview.html">Overview</a></p>
+          <p class="desc">What is the general purpose of using Vue for projects (View layer).</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/overview.html#Reactive-Data-Binding">Reactive Data Binding</a></p>
+              <p class="desc">Schema of View model (data-driven view) with example code of binding JS data to Elements.</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/overview.html#Component-System">Component System</a></p>
+              <p class="desc">Example of building  large-scale apps with Components - simmilar to Html Custom Elements.</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/instance.html">The Vue Instance</a></p>
+          <p class="desc">Details on lifecycle events of an instance and how to use reactive data / properties.</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/instance.html#Constructor">Constructor</a></p>
+              <p class="desc">Creating Vue and building new components with Vue.extend</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/instance.html#Properties-and-Methods">Properties and Methods</a></p>
+              <p class="desc">Reactive data and methods of defining "proxied properties".</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/instance.html#Instance-Lifecycle">Instance Lifecycle</a></p>
+              <p class="desc">Lifecycle events of instance such as compiled, ready and destroyed.</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/instance.html#Lifecycle-Diagram">Lifecycle Diagram</a></p>
+              <p class="desc">Detailed diagram of instance lifecycle informing which events are triggered and when.</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/syntax.html">Data Binding Syntax</a></p>
+          <p class="desc">Using {{ mustaches }} and directives to bind javascript data to html element or trigger events.</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/syntax.html#Interpolations">Interpolations</a></p>
+              <p class="desc">Working with data in html elements by using mustaches {{ ... }}</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#Text">Text</a></p>
+                  <p class="desc">Rendering text from data in html element, with example how to get data only once (one-time interpolations).</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#Raw-HTML">Raw HTML</a></p>
+                  <p class="desc">{{ double mustaches }} - rendering raw text, {{{ triple }}} - rendering real HTML</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#Attributes">Attributes</a></p>
+                  <p class="desc">Changing element attributes with attr="some-{{ number }}"</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/syntax.html#Binding-Expressions">Binding Expressions</a></p>
+              <p class="desc">Definition of what Binding expresion is (a text inside mustache tags)</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#JavaScript-Expressions">JavaScript Expressions</a></p>
+                  <p class="desc">Examples how to use pure javascript inside mustaches. {{ if()... }}</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#Filters">Filters</a></p>
+                  <p class="desc">Modifying result (filtering) of mustache expression {{ expression | filter1 | filer2 }}</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/syntax.html#Directives">Directives</a></p>
+              <p class="desc">What are directives - special html attributes (directives) to add new behavior to DOM elements</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#Arguments">Arguments</a></p>
+                  <p class="desc">Arguments for directives v-directive:argument="...", example of dynamic html attributes and click</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#Modifiers">Modifiers</a></p>
+                  <p class="desc">Modifying Arguments to be interpreted in a special way, for example as literal instead of expression</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/syntax.html#Shorthands">Shorthands</a></p>
+              <p class="desc">Short alternatives of v-bind and v-on directives.</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#v-bind-Shorthand">v-bind Shorthand</a></p>
+                  <p class="desc">shorthand of v-bind: is just :</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/syntax.html#v-on-Shorthand">v-on Shorthand</a></p>
+                  <p class="desc">shorthand of v-on:click is just @click</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/computed.html">Computed Properties</a></p>
+          <p class="desc">A special properties (reactive) which are recalculated every time other properties did change.</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/computed.html#Basic-Example">Basic Example</a></p>
+              <p class="desc">Example code of computed property.</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/computed.html#Computed-Property-vs-watch">Computed Property vs. $watch</a></p>
+              <p class="desc">Different way to watch if object data changed. (Worse version of computed properties).</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/computed.html#Computed-Setter">Computed Setter</a></p>
+              <p class="desc">Computed properties can not only Get data but also Set it and start other reactive things</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/class-and-style.html">Class and Style Bindings</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/class-and-style.html#Binding-HTML-Classes">Binding HTML Classes</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/class-and-style.html#Object-Syntax">Object Syntax</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/class-and-style.html#Array-Syntax">Array Syntax</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/class-and-style.html#Binding-Inline-Styles">Binding Inline Styles</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/class-and-style.html#Object-Syntax-1">Object Syntax</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/class-and-style.html#Array-Syntax-1">Array Syntax</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/class-and-style.html#Auto-prefixing">Auto-prefixing</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/conditional.html">Conditional Rendering</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/conditional.html#v-if">v-if</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/conditional.html#Template-v-if">Template v-if</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/conditional.html#v-show">v-show</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/conditional.html#v-else">v-else</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/conditional.html#Component-caveat">Component caveat</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/conditional.html#v-if-vs-v-show">v-if vs. v-show</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/list.html">List Rendering</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/list.html#v-for">v-for</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/list.html#Template-v-for">Template v-for</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/list.html#Array-Change-Detection">Array Change Detection</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/list.html#Mutation-Methods">Mutation Methods</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/list.html#Replacing-an-Array">Replacing an Array</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/list.html#track-by">track-by</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/list.html#track-by-index">track-by $index</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/list.html#Caveats">Caveats</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/list.html#Object-v-for">Object v-for</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/list.html#Range-v-for">Range v-for</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/list.html#Displaying-Filtered-Sorted-Results">Displaying Filtered/Sorted Results</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/events.html">Methods and Event Handling</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/events.html#Method-Handler">Method Handler</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/events.html#Inline-Statement-Handler">Inline Statement Handler</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/events.html#Event-Modifiers">Event Modifiers</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/events.html#Key-Modifiers">Key Modifiers</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/events.html#Why-Listeners-in-HTML">Why Listeners in HTML?</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/forms.html">Form Input Bindings</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/forms.html#Basics-Usage">Basics Usage</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#Text">Text</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#Checkbox">Checkbox</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#Radio">Radio</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#Select">Select</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/forms.html#Value-Bindings">Value Bindings</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#Checkbox-1">Checkbox</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#Radio-1">Radio</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#Select-Options">Select Options</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/forms.html#Param-Attributes">Param Attributes</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#lazy">lazy</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#number">number</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/forms.html#debounce">debounce</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/transitions.html">Transitions</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/transitions.html#CSS-Transitions">CSS Transitions</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/transitions.html#Example">Example</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/transitions.html#Transition-CSS-Classes">Transition CSS Classes</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/transitions.html#Custom-Transition-Classes">Custom Transition Classes</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/transitions.html#Declaring-Transition-Type">Declaring Transition Type</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/transitions.html#Transition-Flow-Details">Transition Flow Details</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/transitions.html#CSS-Animations">CSS Animations</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/transitions.html#JavaScript-Transitions">JavaScript Transitions</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/transitions.html#Staggering-Transitions">Staggering Transitions</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/components.html">Components</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/components.html#What-are-Components">What are Components?</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/components.html#Using-Components">Using Components</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Registration">Registration</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Local-Registration">Local Registration</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Registration-Sugar">Registration Sugar</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Component-Option-Caveats">Component Option Caveats</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Template-Parsing">Template Parsing</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/components.html#Props">Props</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Passing-Data-with-Props">Passing Data with Props</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#camelCase-vs-kebab-case">camelCase vs. kebab-case</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Dynamic-Props">Dynamic Props</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Literal-vs-Dynamic">Literal vs. Dynamic</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Prop-Binding-Types">Prop Binding Types</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Prop-Validation">Prop Validation</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/components.html#Parent-Child-Communication">Parent-Child Communication</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Parent-Chain">Parent Chain</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Custom-Events">Custom Events</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#v-on-for-Custom-Events">v-on for Custom Events</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Child-Component-Refs">Child Component Refs</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/components.html#Content-Distribution-with-Slots">Content Distribution with Slots</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Compilation-Scope">Compilation Scope</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Single-Slot">Single Slot</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Named-Slots">Named Slots</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/components.html#Dynamic-Components">Dynamic Components</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#keep-alive">keep-alive</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#activate-Hook">activate Hook</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#transition-mode">transition-mode</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/components.html#Misc">Misc</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Components-and-v-for">Components and v-for</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Authoring-Reusable-Components">Authoring Reusable Components</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Async-Components">Async Components</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Assets-Naming-Convention">Assets Naming Convention</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Recursive-Component">Recursive Component</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Fragment-Instance">Fragment Instance</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/components.html#Inline-Template">Inline Template</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/reactivity.html">Reactivity in Depth</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/reactivity.html#How-Changes-Are-Tracked">How Changes Are Tracked</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/reactivity.html#Change-Detection-Caveats">Change Detection Caveats</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/reactivity.html#Initialize-Your-Data">Initialize Your Data</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/reactivity.html#Async-Update-Queue">Async Update Queue</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/reactivity.html#Inside-Computed-Properties">Inside Computed Properties</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/custom-directive.html">Custom Directives</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#Basics">Basics</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#Hook-Functions">Hook Functions</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#Directive-Instance-Properties">Directive Instance Properties</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#Object-Literals">Object Literals</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#Literal-Modifier">Literal Modifier</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#Element-Directives">Element Directives</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#Advanced-Options">Advanced Options</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#params">params</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#deep">deep</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#twoWay">twoWay</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#acceptStatement">acceptStatement</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#terminal">terminal</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/custom-directive.html#priority">priority</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/custom-filter.html">Custom Filters</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/custom-filter.html#Basics">Basics</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/custom-filter.html#Two-way-Filters">Two-way Filters</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/custom-filter.html#Dynamic-Arguments">Dynamic Arguments</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/mixins.html">Mixins</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/mixins.html#Basics">Basics</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/mixins.html#Option-Merging">Option Merging</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/mixins.html#Global-Mixin">Global Mixin</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/mixins.html#Custom-Option-Merge-Strategies">Custom Option Merge Strategies</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/plugins.html">Plugins</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/plugins.html#Writing-a-Plugin">Writing a Plugin</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/plugins.html#Using-a-Plugin">Using a Plugin</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/plugins.html#Existing-Plugins-amp-Tools">Existing Plugins &amp; Tools</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/application.html">Building Large-Scale Apps</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#Modularization">Modularization</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#Single-File-Components">Single File Components</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#Routing">Routing</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#Communication-with-Server">Communication with Server</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#State-Management">State Management</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#Unit-Testing">Unit Testing</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#Deploying-for-Production">Deploying for Production</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/application.html#Webpack">Webpack</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/application.html#Browserify">Browserify</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/application.html#An-App-Example">An App Example</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/comparison.html">Comparison with Other Frameworks</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/comparison.html#Angular">Angular</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/comparison.html#React">React</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/comparison.html#Ember">Ember</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/comparison.html#Polymer">Polymer</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/comparison.html#Riot">Riot</a></p>
+              <p class="desc">description</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="link"><a href="https://vuejs.org/guide/join.html">Join the Vue Community!</a></p>
+          <p class="desc">description</p>
+          <ul>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/join.html#Join-the-Vue-js-Community">Join the Vue.js Community!</a></p>
+              <p class="desc">description</p>
+            </li>
+            <li>
+              <p class="link"><a href="https://vuejs.org/guide/join.html#Resources-You-Should-Know-About">Resources You Should Know About!</a></p>
+              <p class="desc">description</p>
+              <ul>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/join.html#The-Community">The Community</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/join.html#Third-Party-Contributions">Third Party Contributions</a></p>
+                  <p class="desc">description</p>
+                </li>
+                <li>
+                  <p class="link"><a href="https://vuejs.org/guide/join.html#Contributing-to-Vue">Contributing to Vue</a></p>
+                  <p class="desc">description</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+      </ul>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.sticky-kit/1.1.2/jquery.sticky-kit.min.js"></script>
+    <script src="./script.js"></script>
+
+  </body>
+</html>

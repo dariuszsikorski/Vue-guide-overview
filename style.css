@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic&subset=latin,latin-ext);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css);
+body {
+  color: #444;
+  font-family: 'Noto Sans', sans-serif;
+  background: #F2F3F7;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body > p {
+  border: solid 5px red;
+}
+
+.desc {
+  margin-top: 5px;
+  margin-left: 35px;
+}
+
+.desc {
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  background: #fff;
+  padding: 30px 100px;
+}
+
+li {
+  list-style: none;
+}
+
+.index li {
+  margin-left: 50px;
+}
+
+.index a {
+  font-weight: bold;
+  display: block;
+  background: rgba(242, 243, 247, 0.5);
+  border-radius: 4px;
+}
+
+.index a:hover {
+  background: #E4F7EE;
+}
+
+.index .link:before {
+  margin-right: 10px;
+  margin-left: 15px;
+  content: "#";
+  color: #42b983;
+  float: left;
+}
+
+.index .link.is_stuck {
+  z-index: 2;
+  background: #fff;
+}
+
+.index .link.is_stuck a {
+  color: #444;
+}
+
+.index > ul > li {
+  margin: 150px 0 50px 0;
+}
+
+.index > ul > li:first-child {
+  border-top: none;
+}
+
+.index > ul > li > .link {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.index > ul > li > .link a {
+  color: #333;
+}
+
+.index > ul > li li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.index > ul > li li:before {
+  transition: all 1s;
+}
+
+.index > ul > li li:hover:before {
+  border-color: #42b983;
+}
+
+.index > ul > li > ul > li {
+  border-left: solid 2px #DDDDDD;
+  padding-left: 40px;
+  position: relative;
+}
+
+.index > ul > li > ul > li > .link.is_stuck {
+  z-index: 1;
+}
+
+.index > ul > li > ul > li:first-child {
+  margin-top: 20px;
+}
+
+.index > ul > li > ul > li:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  position: absolute;
+  left: -18px;
+  top: 10px;
+  border: solid 2px #ddd;
+  background: #fff;
+}
+
+.index > ul > li > ul > li > ul > li {
+  margin-left: 10px;
+  border-left: solid 1px #DDDDDD;
+  padding-left: 30px;
+  position: relative;
+}
+
+.index > ul > li > ul > li > ul > li:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  left: -12px;
+  top: 16px;
+  border: solid 1px #ddd;
+  background: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+  .index li {
+    margin-left: 15px;
+  }
+}
