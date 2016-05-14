@@ -29,7 +29,7 @@ body > p {
 }
 
 .desc {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .container {
@@ -78,6 +78,18 @@ li {
 
 .index > ul > li {
   margin: 150px 0 50px 0;
+}
+
+.index > ul > li > .desc {
+  font-weight: bold;
+}
+
+.index > ul > li:nth-child(2n) {
+  border-left: solid 5px #41B883;
+}
+
+.index > ul > li:nth-child(2n+1) {
+  border-left: solid 5px #8798AB;
 }
 
 .index > ul > li:first-child {

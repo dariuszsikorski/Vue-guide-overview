@@ -48,7 +48,7 @@ li {
 }
 
 .desc {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .container {
@@ -103,6 +103,15 @@ li {
     // first li
     // color: red;
     // border-top: solid 1px gray;
+    > .desc {
+      font-weight: bold;
+    }
+    &:nth-child(2n) {
+      border-left: solid 5px #41B883;
+    }
+    &:nth-child(2n+1) {
+      border-left: solid 5px #8798AB;
+    }
     margin: 150px 0 50px 0;
     &:first-child {
       border-top: none;
@@ -127,7 +136,6 @@ li {
         }
       }
     }
-
     > ul > li {
       // second li
       // color: green;
